@@ -1,73 +1,36 @@
-Project Name
-This project is a demonstration of running a multi-language application on Kubernetes using Minikube. It includes components built with Docker, Next.js, Node.js, Golang, and the Gin framework.
-
-System Archi
 
 
-![GitHub Logo](https://github.com/maestrom4/Bundy-management-microservice/blob/develop/bundyRevamp.jpg?raw=true)
+## Getting Started
 
+First, run the development server:
 
-Table of Contents
-Introduction
-Prerequisites
-Setup
-Usage
-Contributing
-License
-Introduction
-The purpose of this project is to showcase how to deploy a multi-language application on Kubernetes using Minikube. It includes the following components:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Docker: Containerization for each service.
-Next.js: Frontend framework built with React.js.
-Node.js: JavaScript runtime for backend services.
-Golang: Programming language for backend services.
-Gin Framework: Web framework for Golang.
-Prerequisites
-Before you begin, ensure you have the following installed:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Minikube
-Docker
-kubectl
-Node.js
-Golang
-Next.js
-Setup
-Clone the Repository:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-bash
-Copy code
-git clone https://github.com/maestrom4
-cd project
-Build Docker Images:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Build Docker images for each service using the provided Dockerfiles.
+## Learn More
 
-bash
-Copy code
-docker build -t nextjs-app ./nextjs
-docker build -t nodejs-app ./nodejs
-docker build -t golang-app ./golang
-Start Minikube:
+To learn more about Next.js, take a look at the following resources:
 
-Start Minikube to deploy the Kubernetes cluster locally.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-bash
-Copy code
-minikube start
-Deploy to Kubernetes:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Deploy the application to Kubernetes using YAML manifests in the kubernetes directory.
+## Deploy on Vercel
 
-bash
-Copy code
-kubectl apply -f kubernetes/
-Usage
-Once the application is deployed, you can access it by navigating to the Minikube IP address in your browser.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-License
-This project is licensed under the MIT License.
-
-Feel free to customize this README template according to your project's specific requirements and details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
