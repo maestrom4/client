@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppSelector, useAppDispatch } from '../../hooks/useDisSelector';
 import { setUser } from '../../store/slices/userSlice';
-
+import { RootState } from '../../store';
 const UserProfile: React.FC = () => {
-  const user = useAppSelector((state) => state.user.user);
+  const user = useAppSelector((state: RootState) => state.user.user); 
   const dispatch = useAppDispatch();
 
   const handleLogin = () => {
